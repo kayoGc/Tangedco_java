@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpurple"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/seta" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digita o nome ai"
+        android:textColorHint="@color/white"
+        app:startIconContentDescription="Usuario"
+        app:startIconDrawable="@drawable/baseline_person">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/redondo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digita a senha meu"
+
+        android:textColorHint="@color/white"
+        app:endIconMode="password_toggle"
+        app:startIconContentDescription="Senha"
+        app:startIconDrawable="@drawable/baseline_lock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/redondo"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Salvar senha?"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#f7a11a"
+            android:text="sing in"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esqueceu a senha?"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="80dp"
+            android:gravity="end"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="não tem conta?"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end">
+
+        <Button
+            android:layout_marginLeft="240dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se Registre"
+            android:textSize="20dp"
+            android:background="#00FFFFFF"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_forward_ios"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+    </LinearLayout>
+</LinearLayout>

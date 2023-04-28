@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5754b4"
+
+    android:background="@drawable/wallpurple"
+
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -88,7 +90,7 @@
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:src="@drawable/face" />
+            android:src="@drawable/facebook" />
 
         <ImageView
             android:layout_width="40dp"
